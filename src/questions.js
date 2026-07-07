@@ -118,7 +118,7 @@ export const chapterContent = {
     theme: "seoulmuseum",
     title: "Mission in Gyeonghuigung: The Palace That Wouldn't Disappear",
     subtitle: "Seoul Museum of History",
-    codename: "OPERATION BURIED PALACE",
+    codename: "SCAVENGER HUNT: BURIED PALACE",
     threatLevel: "Elevated",
     lastKnownLocation: "Seoul Museum of History, Jongro-gu",
     introTitle: "Gyeonghuigung waits beyond the city streets",
@@ -141,7 +141,7 @@ export const chapterContent = {
         story: {
           title: "Luna's Journal, Entry 1",
           body:
-            "In the palace's front gate, the courtyard stood empty. A throne hall once ruled this space. It commanded a much bigger complex. This palace belonged to a dynasty which ruled here for centuries. Somewhere along the way, a king renamed it. But most of the original buildings are gone.",
+            "Heunghwamun — the front gate. Beyond it, an empty courtyard where Sungjeongjeon once stood, the throne hall of Joseon's kings. This was Gyeonghuigung, one of the dynasty's five grand palaces, tucked west of Gyeongbokgung and Changdeokgung — locals called it Seogwol, the West Palace. In 1760, a king gave it the name it still carries. But most of what should be standing here is just a footprint pressed into the grass. When another palace needed rebuilding, this one gave up its own timber, stone by stone, to finish someone else's story.",
           image: "journal-2a.jpg",
         },
         questions: chapter1Questions.slice(0, 3),
@@ -150,7 +150,7 @@ export const chapterContent = {
         story: {
           title: "Luna's Journal, Entry 2",
           body:
-            "The museum splits Seoul's history into zones. The city didn't start with the name it has now. When a turbulent stretch shows up, right before the empire ended. After that, the city's name changed again. Every rename feels like a rewrite; Whoever's in charge that decade gets to hold the pen.",
+            "Inside, the museum splits Seoul's life into zones, like rings in a tree. Zone 1 opens in 1394, when a new king named his new capital. Zone 2 carries the city to the year an empire's flag came down for the last time — decades of reform pushed forward under a grip that kept tightening. Zone 3 opens on a city that isn't even allowed to keep its own name anymore. Every rename is a hand changing on the pen; whoever holds the city gets to say what it's called.",
           image: "journal-2b.jpg",
         },
         questions: chapter1Questions.slice(3, 7),
@@ -159,7 +159,7 @@ export const chapterContent = {
         story: {
           title: "Final Entry",
           body:
-            "Down in the City Model Hall, the whole city shrinks into one room. Above it all, one line sums up everything. About what this city has been and what it's still becoming. If you're reading this, you finished what she started. Luna wasn't erased either, she just became part of the trail. Now you are too.",
+            "Zone 4 picks the city back up after liberation and carries it forward to the year the world came to Seoul to watch it run. Down in the City Model Hall, all of it — palace, colony, Olympic city — shrinks into one room, small enough to hold in a glance. Above it, one line ties the whole thing together: what this city has been, and what it's still becoming. If you're reading this, you finished what she started. Luna wasn't erased either — she just became part of the trail. Now you are too.",
           image: "journal-2c.jpg",
         },
         questions: chapter1Questions.slice(7, 10),

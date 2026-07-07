@@ -128,40 +128,95 @@ function PosterIllustration() {
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
     >
+      {/* Ground line */}
+      <path d="M4 176 L216 176" stroke="currentColor" strokeWidth="2" opacity="0.4" />
+
+      {/* Stone platform the hanok sits on */}
       <path
-        d="M18 30 L92 18 L162 30 L150 158 L78 172 L10 158 Z"
+        d="M24 176 L34 160 L186 160 L196 176 Z"
         stroke="currentColor"
-        strokeWidth="3"
-        strokeLinejoin="round"
+        strokeWidth="2"
+        fill="rgba(246,236,217,0.25)"
       />
-      <path d="M40 42 Q60 60 42 84 Q26 104 46 128" stroke="currentColor" strokeWidth="1.4" opacity="0.55" />
-      <path d="M70 34 Q90 50 78 70" stroke="currentColor" strokeWidth="1.4" opacity="0.55" />
-      <path d="M112 40 L138 46 M108 60 L134 64 M60 140 L86 148 M96 152 L118 158" stroke="currentColor" strokeWidth="1.4" opacity="0.55" />
-      <path d="M40 112 q14 -10 28 0 q14 10 0 18 q-14 8 -22 -2" stroke="currentColor" strokeWidth="1.6" strokeDasharray="4 4" opacity="0.7" />
-      <path d="M120 100 L134 112" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-      <path d="M128 118 L108 96" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+      <path d="M46 160 L52 150 L168 150 L174 160" stroke="currentColor" strokeWidth="1.6" opacity="0.7" />
 
-      <g>
-        <circle cx="130" cy="82" r="40" stroke="currentColor" strokeWidth="6" fill="rgba(246,236,217,0.9)" />
-        <circle cx="130" cy="82" r="31" stroke="currentColor" strokeWidth="2" opacity="0.5" />
-        <path
-          d="M130 66 c8 0 13 6 13 13 c0 9 -13 20 -13 20 c0 0 -13 -11 -13 -20 c0 -7 5 -13 13 -13 Z"
-          fill="currentColor"
-        />
-        <circle cx="130" cy="79" r="4.5" fill="rgba(246,236,217,0.95)" />
-      </g>
-
+      {/* Wooden porch pillars */}
       <path
-        d="M158 110 L190 150"
+        d="M56 150 L56 98 M79 150 L79 98 M102 150 L102 98 M118 150 L118 98 M142 150 L142 98 M164 150 L164 98"
         stroke="currentColor"
-        strokeWidth="12"
+        strokeWidth="3.4"
         strokeLinecap="round"
       />
+
+      {/* Wall panels: latticed windows flanking a dark open doorway at center */}
       <path
-        d="M158 110 L190 150"
-        stroke="rgba(246,236,217,0.4)"
+        d="M58 106 H77 M58 114 H77 M58 122 H77 M58 130 H77 M58 138 H77
+           M143 106 H162 M143 114 H162 M143 122 H162 M143 130 H162 M143 138 H162"
+        stroke="currentColor"
+        strokeWidth="1.2"
+        opacity="0.6"
+      />
+      <path d="M104 98 H116 V150 H104 Z" fill="currentColor" opacity="0.75" />
+      <path d="M104 98 V150 M116 98 V150 M104 120 H116" stroke="rgba(246,236,217,0.5)" strokeWidth="1.2" />
+
+      {/* Head beam running under the roofline */}
+      <path d="M48 98 L172 98" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
+
+      {/* Roof: solid tiled dome resting flush on the beam, hanok-style */}
+      <path
+        d="M18 98
+           C 18 74, 50 60, 90 57
+           C 100 56, 120 56, 130 57
+           C 170 60, 202 74, 202 98
+           Z"
+        stroke="currentColor"
+        strokeWidth="2.6"
+        strokeLinejoin="round"
+        fill="currentColor"
+        fillOpacity="0.82"
+      />
+      {/* Upturned corner eaves, growing directly out of the roof mass */}
+      <path
+        d="M18 98 C 10 92, 6 82, 10 72"
+        stroke="currentColor"
         strokeWidth="5"
         strokeLinecap="round"
+        fill="none"
+      />
+      <path
+        d="M202 98 C 210 92, 214 82, 210 72"
+        stroke="currentColor"
+        strokeWidth="5"
+        strokeLinecap="round"
+        fill="none"
+      />
+      {/* Ridge cap along the top */}
+      <path
+        d="M28 76 C 50 62, 80 58, 110 57 C 140 58, 170 62, 192 76"
+        stroke="rgba(246,236,217,0.55)"
+        strokeWidth="1.6"
+      />
+      {/* Round tile-end dots along the eave */}
+      <path
+        d="M22 94 a2 2 0 1 1 4 0 a2 2 0 1 1 -4 0
+           M38 84 a2 2 0 1 1 4 0 a2 2 0 1 1 -4 0
+           M56 76 a2 2 0 1 1 4 0 a2 2 0 1 1 -4 0
+           M76 70 a2 2 0 1 1 4 0 a2 2 0 1 1 -4 0
+           M98 67 a2 2 0 1 1 4 0 a2 2 0 1 1 -4 0
+           M120 67 a2 2 0 1 1 4 0 a2 2 0 1 1 -4 0
+           M142 70 a2 2 0 1 1 4 0 a2 2 0 1 1 -4 0
+           M162 76 a2 2 0 1 1 4 0 a2 2 0 1 1 -4 0
+           M180 84 a2 2 0 1 1 4 0 a2 2 0 1 1 -4 0
+           M196 94 a2 2 0 1 1 4 0 a2 2 0 1 1 -4 0"
+        fill="rgba(246,236,217,0.7)"
+      />
+
+      {/* Pine tree beside the building for scale */}
+      <path d="M204 152 L204 176" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" opacity="0.7" />
+      <path
+        d="M204 112 Q192 122 198 132 Q188 138 196 148 Q186 154 204 160 Q222 154 212 148 Q220 138 210 132 Q216 122 204 112 Z"
+        fill="currentColor"
+        opacity="0.5"
       />
     </svg>
   );
@@ -860,19 +915,19 @@ export default function App() {
           <p className="briefing-tag reveal reveal-1">Eyes Only — Field Recruitment</p>
 
           <h1 className="briefing-title reveal reveal-2">
-            SCAVENGER
+            Scavenger Hunt
             <br />
-            HUNT
+            : BURIED PALACE
           </h1>
 
           <div className="briefing-illustration-wrap reveal reveal-3">
             <PosterIllustration />
           </div>
 
-          <p className="briefing-tagline reveal reveal-4">Investigate · Decrypt · Report</p>
+          <p className="briefing-tagline reveal reveal-4">Trace · Uncover · Remember</p>
 
           <p className="briefing-note reveal reveal-4">
-            Before your trip, you received a strange email — one sentence, no subject line:
+            Before your trip to Gyeonghuigung, you received a strange email — one sentence, no subject line:
             “You're the only one who can finish what Luna started.”
           </p>
 
@@ -908,7 +963,7 @@ export default function App() {
             </div>
             <div className="case-file-status-row">
               <span>LAST KNOWN LOCATION</span>
-              <strong>Seoul, South Korea</strong>
+              <strong>Gyeonghuigung Palace grounds, Seoul, South Korea</strong>
             </div>
             <div className="case-file-status-row">
               <span>CASE NO.</span>
@@ -932,12 +987,12 @@ export default function App() {
 
           <div className="subject-background reveal reveal-3">
             <div className="case-file-subject">
+              <div className="subject-photo">
+                <SubjectPhoto />
+              </div>
               <div>
                 <p className="subject-eyebrow">Subject Background</p>
                 <h2 className="case-file-title">Luna Shim</h2>
-              </div>
-              <div className="subject-photo">
-                <SubjectPhoto />
               </div>
             </div>
 
@@ -961,7 +1016,7 @@ export default function App() {
             </div>
 
             <TypedLines
-              text="While serving in Korea, Luna learned her great-grandfather 'Kai' had fought in the Korean War. She began tracing his footsteps. With leaving documents behind, she disappeared on a mission."
+              text="While researching her family in Korea, Luna learned her great-grandfather 'Kai' had studied at a school built directly on top of the palace grounds during the Japanese colonial period — one of the reasons so little of Gyeonghuigung survives today. She began tracing his footsteps through the site. With leaving documents behind, she disappeared on a mission."
               lineClassName="case-file-note"
               stackClassName="highlighted-note typed-lines-stack"
             />

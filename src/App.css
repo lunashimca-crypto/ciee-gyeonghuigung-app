@@ -22,6 +22,12 @@
   --paper-3: #c7ab74;
   --radius-sm: 10px;
   --radius-lg: 14px;
+
+  /* Dancheong-inspired palace accents: jade roof-beam green, deep vermilion, temple gold. */
+  --dancheong-jade: #2f6f5e;
+  --dancheong-jade-dark: #1e4a3e;
+  --dancheong-vermilion: #b5432c;
+  --dancheong-gold: #c9a227;
 }
 
 * {
@@ -209,8 +215,8 @@ input {
 
 .cmd-button.secondary {
   background: var(--paper-1);
-  border: 1.5px solid rgba(74, 55, 40, 0.55);
-  color: var(--ink-dark);
+  border: 1.5px solid var(--dancheong-jade);
+  color: var(--dancheong-jade-dark);
 }
 
 .cmd-button.inline,
@@ -264,6 +270,23 @@ input {
   border-radius: var(--radius-lg);
   box-shadow: 0 20px 44px rgba(74, 55, 40, 0.22);
   overflow: hidden;
+}
+
+.briefing-frame::after,
+.case-file::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    var(--dancheong-jade) 0 30%,
+    var(--dancheong-gold) 30% 55%,
+    var(--dancheong-vermilion) 55% 100%
+  );
+  z-index: 2;
 }
 
 .briefing-frame::before {
@@ -519,7 +542,7 @@ input {
 
 .case-file-rule {
   border: none;
-  border-top: 1px solid rgba(74, 55, 40, 0.25);
+  border-top: 1px dashed rgba(47, 111, 94, 0.4);
   margin: 2px 0;
 }
 
@@ -533,9 +556,8 @@ input {
 
 .case-file-subject {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 12px;
+  align-items: center;
+  gap: 14px;
 }
 
 .subject-eyebrow {
@@ -560,14 +582,14 @@ input {
 
 .subject-photo {
   flex-shrink: 0;
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   border-radius: 6px;
-  border: 1px solid rgba(74, 55, 40, 0.3);
+  border: 1px solid var(--dancheong-jade);
   background: #cabd8f;
   display: grid;
   place-items: center;
-  color: #6b5a34;
+  color: var(--dancheong-jade-dark);
   overflow: hidden;
 }
 
@@ -577,10 +599,12 @@ input {
 }
 
 .case-file-fields {
-  margin: 0;
+  margin: 10px 0 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px 16px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px 12px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(74, 55, 40, 0.25);
 }
 
 .case-file-field {
@@ -726,7 +750,7 @@ input {
   font-family: "Bebas Neue", sans-serif;
   font-size: 30px;
   letter-spacing: 0.03em;
-  color: var(--ink-dark);
+  color: var(--paper-1);
 }
 
 .clearance-badge {
@@ -777,6 +801,7 @@ input {
     linear-gradient(160deg, rgba(255, 255, 255, 0.25), rgba(74, 55, 40, 0.04)),
     radial-gradient(120% 130% at 50% 15%, var(--paper-1) 0%, var(--paper-2) 60%, var(--paper-3) 100%);
   border: 1px solid rgba(74, 55, 40, 0.25);
+  border-left: 4px solid var(--dancheong-jade);
   box-shadow: 0 14px 28px rgba(74, 55, 40, 0.18);
   display: flex;
   flex-direction: column;
@@ -1460,6 +1485,10 @@ input {
   .cmd-button.inline,
   .card-submit.inline {
     width: 100%;
+  }
+
+  .case-file-fields {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
