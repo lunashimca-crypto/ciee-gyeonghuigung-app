@@ -39,7 +39,6 @@ The experience is designed to be:
 - [Overview](#overview)
 - [Tech Stack](#tech-stack)
 - [Key Features](#key-features)
-- [Screenshots](#screenshots)
 - [How It Works](#how-it-works)
 - [Deployment](#deployment)
 - [Background](#background)
@@ -64,11 +63,6 @@ The experience is designed to be:
 - 🏅 Final rank/score screen based on accuracy and/or completion
 - 📱 Responsive layout for use on-site at the palace and museum
 
-## Screenshots
-
-| Mission Briefing | Multiple-Choice Question | Fill-in-the-Blank Question | Final Rank |
-|:---:|:---:|:---:|:---:|
-| _screenshot_ | _screenshot_ | _screenshot_ | _screenshot_ |
 
 ## How It Works
 
