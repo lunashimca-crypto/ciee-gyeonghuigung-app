@@ -41,7 +41,7 @@ The experience is designed to be:
 - [Key Features](#key-features)
 - [How It Works](#how-it-works)
 - [Deployment](#deployment)
-- [Other CIEE apps] (#other-ciee-apps)
+- [Other CIEE apps](#other-ciee-apps)
 ---
 
 ## Tech Stack
