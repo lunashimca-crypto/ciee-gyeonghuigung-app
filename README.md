@@ -1,6 +1,6 @@
 # Gyeonghuigung Palace & Seoul Museum of History — Scavenger Hunt
 
-A scavenger hunt app built for CIEE Korea program students to explore Gyeonghuigung Palace and the adjacent Seoul Museum of History through an interactive, self-guided mission — featuring a palace-inspired visual style and a mix of question formats, including fill-in-the-blank.
+A scavenger hunt app built for CIEE Korea program students to explore Gyeonghuigung Palace and the Seoul Museum of History through an interactive mission. 
 
 **Live Demo:** https://lunashimca-crypto.github.io/ciee-gyeonghuigung-app/
 
@@ -11,7 +11,7 @@ A scavenger hunt app built for CIEE Korea program students to explore Gyeonghuig
 
 ## Why This Project
 
-Gyeonghuigung Palace and the neighboring Seoul Museum of History cover a lot of ground — both physically and in terms of history — and it's easy for students to walk through without really absorbing what they're looking at. This app turns that visit into a guided mission across both sites, with 10 questions that push students to actually engage with specific palace structures and museum exhibits rather than just passing by them.
+Gyeonghuigung Palace and the neighbouring Seoul Museum of History cover a lot of ground. It's easy for students to walk through without really understanding what they're looking at. This app turns that visit into a guided mission across both sites, with 10 questions. 
 
 I led this project end to end, from concept through deployment:
 
@@ -41,9 +41,7 @@ The experience is designed to be:
 - [Key Features](#key-features)
 - [How It Works](#how-it-works)
 - [Deployment](#deployment)
-- [Background](#background)
-- [Credits](#credits)
-
+- [Other CIEE apps] (#other-ciee-apps)
 ---
 
 ## Tech Stack
@@ -77,7 +75,7 @@ The experience is designed to be:
 This app is deployed via **GitHub Pages** and is live at:
 https://lunashimca-crypto.github.io/ciee-gyeonghuigung-app/
 
-## Background
+## Other CIEE Projects
 
-Built using the same underlying approach as the [War Memorial of Korea Scavenger Hunt](#) app, this version was adapted for a two-site visit (palace + museum) rather than a single location, with its own question set, narrative, visual style, and dedicated `localStorage` key to keep progress separate from the other CIEE scavenger hunt apps.
-
+- [Korea Food Guide](https://github.com/lunashimca-crypto/restaurant-app-ciee)
+- [War Memorial of Korea — Live Demo](https://lunashimca-crypto.github.io/ciee-war-memorial-app/)
